@@ -29,14 +29,14 @@ El proyecto es **autocontenido**: aprovisiona toda la arquitectura de red desde 
 3. Consola PowerShell.
 
 ### Instrucciones de Despliegue
-1. (Opcional) Abre el archivo `launch-infra.ps1` y modifica el parámetro `AdminEmail="luis.simon@alumni.immune.institute"` por un correo de tu elección para recibir alertas en tiempo real de escalado. Si no lo cambias, los avisos llegarán a Luis.
+1. (Opcional) Abre el archivo `launch-infra.ps1` y modifica el parámetro `AdminEmail="luis.simon@alumni.immune.institute"` por un correo de tu elección para recibir alertas en tiempo real de escalado.
 2. Ejecuta el script de orquestación desde la raíz:
    ```powershell
    .\launch-infra.ps1
    ```
-2. El dqespliegue de toda la topología de red y CloudFront tardará en desplegarse unos minutos.
-3. Para ver el progreso del despliegue:
+3. El despliegue de toda la topología de red y CloudFront tardará en desplegarse unos minutos.
+4. Para ver el progreso del despliegue:
    ```powershell
    .\progreso-deployment.ps1
    ```
-4. Cuando lances el script anterior y este este en estado 'CREATE_COMPLETE', aparte mostrará las urls del Load Balancer y de CloudFront. Accede a ellas y verifica que el despliegue se ha realizado correctamente.
+5. Cuando lances el script anterior y este este en estado 'CREATE_COMPLETE', aparte mostrará las urls del Load Balancer y de CloudFront. Accede a ellas y verifica que el despliegue se ha realizado correctamente.
